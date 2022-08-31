@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.Mint{
+  /* height: 100vh ; */
+  overflow: hidden
+}
+.Toastify__toast-container {
+  width: auto !important;
+  background-color: black !important;
+  /* background: #000 !important;*/
+ color: #fff !important; 
+}
+@media (max-width: 600px){
+  .Toastify__toast-container {
+    width: 100% !important;
+   
+  }
+  .Mint{
+    height: 100% !important;
+  }
+}
+.box1 {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(255, 255, 255, 0.55); */
+
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.box2 {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.6);
+  /* height: 400px; */
+  /* background: rgba(255, 255, 255, 0.55); */
+
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  /* border: 1px solid rgba(255, 255, 255, 0.6); */
+}
+.box3 {
+  /* From https://css.glass */
+  /* background: rgba(63, 22, 8, 0.6); */
+  background: rgba(0, 0, 0, 0.6);
+
+  /* background: rgba(255, 255, 255, 0.55); */
+
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  /* border: 1px solid rgba(255, 255, 255, 0.6); */
+}
+.app {
+  /* height: 100%; */
+  /* max-width: 100% !important; */
+}
+.bg {
+  /* position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0; */
+  /* width: 100%;
+  height: 100%; */
+  /* min-height: 100%;
+  min-width: 100%; */
+  /* width: 100vh;
+  height: 100vh;
+  background-size: fit; */
+  /* background-position: bottom; */
+}
+body {
+  /* width: 100% !important; */
+}
+.app {
+  /* width: 100%; */
+  background: #121212;
+  /* background-image: url(./assets/bg-banner-v12.jpg) !important; */
+}
+.roadmap {
+  background-image: url(./assets/poker3.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center;
+}
+.main_bg {
+  background-image: url(./assets/main_bg.gif) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top;
+
+  width: 100%;
+}
+.lounge {
+  background-image: url(./assets/lounge.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center;
+  /* width: 100%; */
+}
+.horse_track {
+  background-image: url(./assets/horse_track.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position-y: bottom;
+  /* width: 100%; */
+}
+.button:hover {
+  box-shadow: 0 0 12px rgba(70, 150, 240, 0.7) inset;
+  /* border: 1px solid rgba(255, 255, 255, 1); */
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.5s;
+}
+
+
+.arrow-down-close {
+  width: 100px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.arrow-down-close:before, .arrow-down-close:after {
+  content: "";
+  display: inline-block;
+  height: 60px;
+  width: 10px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  transition: 300ms ease-in-out transform;
+}
+.arrow-down-close:before {
+  transform: rotate(-45deg);
+  left: 18px;
+  top: -4px;
+}
+.arrow-down-close:after {
+  transform: rotate(45deg);
+  left: 40px;
+  top: -4px;
+}
+.arrow-down-close.open:before {
+  transform: translateX(17px) rotate(-45deg);
+}
+.arrow-down-close.open:after {
+  transform: translateX(-17px) rotate(45deg);
+}
